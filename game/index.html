@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crimson Tide Bay — an open-world crime game in one bay</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #17102a; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Crimson Tide Bay: drive and walk the island, take story jobs, outrun the Bay PD"></canvas>
+<p id="status" role="status" aria-live="polite">Crimson Tide Bay — WASD to move, E to enter a car, F to fire, M for the map, G for the garage.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
